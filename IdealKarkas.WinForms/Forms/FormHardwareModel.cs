@@ -2,6 +2,7 @@
 using IdealKarkas.Context.Enums;
 using IdealKarkas.Context.Models;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace IdealKarkas.WinForms.Forms
@@ -9,11 +10,26 @@ namespace IdealKarkas.WinForms.Forms
     public partial class FormHardwareModel : Form
     {
         public Hardware Hardware { get; set; }
+        int inty;
         public FormHardwareModel()
         {
             InitializeComponent();
             Hardware = new Hardware();
             cmbTypeOverShip.Items.AddRange(Enum.GetNames(typeof(TypeOvership)));
+            var context = new IKContext();
+            var dop = context.Hardwares.OrderByDescending(x => x.SerialNumber).FirstOrDefault();
+            if (dop != null)
+            {
+                inty = Convert.ToInt32( dop.SerialNumber) + 1;
+            }
+            else
+            {
+                inty = 2100;
+            }
+            if (txtNumber.Text == string.Empty)
+            {
+                txtNumber.Text = inty.ToString();
+            }
         }
 
         public FormHardwareModel(Hardware hardware) : this()

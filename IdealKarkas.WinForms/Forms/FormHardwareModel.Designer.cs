@@ -68,6 +68,7 @@
             this.txtNumber.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtNumber.Location = new System.Drawing.Point(26, 152);
             this.txtNumber.Name = "txtNumber";
+            this.txtNumber.ReadOnly = true;
             this.txtNumber.Size = new System.Drawing.Size(356, 23);
             this.txtNumber.TabIndex = 2;
             this.txtNumber.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
