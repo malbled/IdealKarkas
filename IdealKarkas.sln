@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdealKarkas.WinForms", "IdealKarkas.WinForms\IdealKarkas.WinForms.csproj", "{A2F2D437-EF8E-4D4C-8C99-AA6A0FB10C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdealKarkas.Context", "IdealKarkas.Context\IdealKarkas.Context.csproj", "{A5F6749E-38C8-4B7A-A7FD-45DEE07F95BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2F2D437-EF8E-4D4C-8C99-AA6A0FB10C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F2D437-EF8E-4D4C-8C99-AA6A0FB10C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F2D437-EF8E-4D4C-8C99-AA6A0FB10C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F2D437-EF8E-4D4C-8C99-AA6A0FB10C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F6749E-38C8-4B7A-A7FD-45DEE07F95BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F6749E-38C8-4B7A-A7FD-45DEE07F95BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F6749E-38C8-4B7A-A7FD-45DEE07F95BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F6749E-38C8-4B7A-A7FD-45DEE07F95BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3880BFD6-01DA-4CD7-AFE7-2F1355985478}
+	EndGlobalSection
+EndGlobal

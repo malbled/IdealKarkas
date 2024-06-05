@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2F2D437-EF8E-4D4C-8C99-AA6A0FB10C39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IdealKarkas.WinForms</RootNamespace>
+    <AssemblyName>IdealKarkas.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>image2-_1_.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\FormAddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddTask.Designer.cs">
+      <DependentUpon>FormAddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClientModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClientModel.Designer.cs">
+      <DependentUpon>FormClientModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormClient.Designer.cs">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormObjectModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormObjectModel.Designer.cs">
+      <DependentUpon>FormObjectModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormObject.Designer.cs">
+      <DependentUpon>FormObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHardwareModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHardwareModel.Designer.cs">
+      <DependentUpon>FormHardwareModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAccount.Designer.cs">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormContact.Designer.cs">
+      <DependentUpon>FormContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHardware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHardware.Designer.cs">
+      <DependentUpon>FormHardware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormNewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNewOrder.Designer.cs">
+      <DependentUpon>FormNewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormOrders.Designer.cs">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTreeViewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTreeViewProject.Designer.cs">
+      <DependentUpon>FormTreeViewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormАuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormАuthorization.Designer.cs">
+      <DependentUpon>FormАuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ViewInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewInfo.Designer.cs">
+      <DependentUpon>ViewInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ViewObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ViewObject.Designer.cs">
+      <DependentUpon>ViewObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkToClient.cs" />
+    <Compile Include="WorkToStaff.cs" />
+    <Compile Include="WorkToUser.cs" />
+    <EmbeddedResource Include="Forms\FormAddTask.resx">
+      <DependentUpon>FormAddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClientModel.resx">
+      <DependentUpon>FormClientModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormClient.resx">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormObjectModel.resx">
+      <DependentUpon>FormObjectModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormObject.resx">
+      <DependentUpon>FormObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHardwareModel.resx">
+      <DependentUpon>FormHardwareModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAccount.resx">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormContact.resx">
+      <DependentUpon>FormContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHardware.resx">
+      <DependentUpon>FormHardware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormNewOrder.resx">
+      <DependentUpon>FormNewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTreeViewProject.resx">
+      <DependentUpon>FormTreeViewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormАuthorization.resx">
+      <DependentUpon>FormАuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\ViewInfo.resx">
+      <DependentUpon>ViewInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ViewObject.resx">
+      <DependentUpon>ViewObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IdealKarkas.Context\IdealKarkas.Context.csproj">
+      <Project>{a5f6749e-38c8-4b7a-a7fd-45dee07f95bc}</Project>
+      <Name>IdealKarkas.Context</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-maximize-3413667.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image2-_1_.ico" />
+    <None Include="Resources\icon-search %282%29.png" />
+    <None Include="Resources\icon-search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
