@@ -79,19 +79,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(26, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 17);
+            this.label1.Size = new System.Drawing.Size(192, 20);
             this.label1.TabIndex = 85;
             this.label1.Text = "Клиент с ФИО... добавлен";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTimePicker1.Location = new System.Drawing.Point(29, 160);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(368, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(368, 27);
             this.dateTimePicker1.TabIndex = 86;
             // 
             // label2
@@ -106,12 +106,13 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(29, 259);
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtAddress.Location = new System.Drawing.Point(29, 231);
             this.txtAddress.MaximumSize = new System.Drawing.Size(368, 145);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtAddress.Size = new System.Drawing.Size(368, 45);
+            this.txtAddress.Size = new System.Drawing.Size(368, 71);
             this.txtAddress.TabIndex = 91;
             this.txtAddress.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -119,7 +120,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(26, 241);
+            this.label4.Location = new System.Drawing.Point(26, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(156, 17);
             this.label4.TabIndex = 92;
@@ -127,6 +128,7 @@
             // 
             // txtDesc
             // 
+            this.txtDesc.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.txtDesc.Location = new System.Drawing.Point(29, 541);
             this.txtDesc.MaximumSize = new System.Drawing.Size(368, 181);
             this.txtDesc.Multiline = true;
@@ -170,20 +172,20 @@
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(84, 694);
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(30, 694);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 17);
+            this.label7.Size = new System.Drawing.Size(367, 23);
             this.label7.TabIndex = 97;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(13, 15);
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(13, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 15);
+            this.label9.Size = new System.Drawing.Size(95, 20);
             this.label9.TabIndex = 37;
             this.label9.Text = "Тип проекта";
             // 
@@ -192,12 +194,13 @@
             this.cmbTypeObject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbTypeObject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTypeObject.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbTypeObject.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cmbTypeObject.FormattingEnabled = true;
             this.cmbTypeObject.Location = new System.Drawing.Point(123, 16);
             this.cmbTypeObject.Name = "cmbTypeObject";
-            this.cmbTypeObject.Size = new System.Drawing.Size(350, 23);
+            this.cmbTypeObject.Size = new System.Drawing.Size(350, 28);
             this.cmbTypeObject.TabIndex = 36;
+            this.cmbTypeObject.SelectedIndexChanged += new System.EventHandler(this.cmbTypeObject_SelectedIndexChanged);
             // 
             // panelData
             // 

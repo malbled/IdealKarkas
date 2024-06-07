@@ -60,6 +60,21 @@ namespace IdealKarkas.WinForms.Forms
         private void FormNewOrder_Load(object sender, EventArgs e)
         {
             Print();
+            using (var db = new IKContext())
+            {
+                cmbTypeObject.Items.Clear();
+                var types = db.TypeObjects.ToArray();
+                var defaultType = new TypeObject
+                {
+                    Id = -1,
+                    Title = "Все типы"
+                };
+
+                cmbTypeObject.Items.AddRange(types);
+                cmbTypeObject.Items.Insert(0, defaultType);
+                cmbTypeObject.SelectedIndex = 0;
+                cmbTypeObject.DisplayMember = nameof(TypeObject.Title);
+            }
         }
 
         private void btnAddClient_Click(object sender, EventArgs e)
@@ -109,6 +124,32 @@ namespace IdealKarkas.WinForms.Forms
                 db.SaveChanges();
                 MessageBox.Show($"Заказ открыт!\nНомер проекта:  {order.NumberProject}", "IdealKarkas", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
+            }
+        }
+
+        private void cmbTypeObject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTypeObject.SelectedItem == null)
+            {
+                return;
+            }
+
+            var selectedTypeId = ((TypeObject)cmbTypeObject.SelectedItem).Id;
+
+            foreach (var item in flowLayoutPanel1.Controls)
+            {
+                var visible = true;
+
+                if (item is ViewObject tourView)
+                {
+                    if (selectedTypeId != -1
+                        && tourView.objectMod.TypeObjectId != selectedTypeId && tourView.objectMod.IsActual == null)
+                    {
+                        visible = false;
+                    }
+
+                    tourView.Visible = visible;
+                }
             }
         }
     }

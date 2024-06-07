@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.IO;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 
 namespace IdealKarkas.WinForms.UserControls
@@ -22,6 +23,7 @@ namespace IdealKarkas.WinForms.UserControls
             label1.Text = objectMod.Title;
             label3.Text = objectMod.Area.ToString() + " м²";
             label2.Text = $"{objectMod.Price:C2}";
+            label4.Text = objectMod.TypeObject.ToString();
             if (objectMod.ImagePreview != null)
             {
                 var image = Image.FromStream(new MemoryStream(objectMod.ImagePreview));

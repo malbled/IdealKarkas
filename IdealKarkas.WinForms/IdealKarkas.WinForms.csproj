@@ -265,6 +265,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="image2-_1_.ico" />
+    <None Include="Resources\free-icon-yes-9426997.png" />
     <None Include="Resources\icon-search %282%29.png" />
     <None Include="Resources\icon-search.png" />
   </ItemGroup>

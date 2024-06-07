@@ -136,6 +136,9 @@
   <data name="icon-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon-search (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-search (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,7 +148,7 @@
   <data name="free-icon-maximize-3413667" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-maximize-3413667.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-search (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-search (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="free-icon-yes-9426997" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-yes-9426997.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -39,13 +39,13 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStripHardWare = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.выбратьКлиентаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxMain = new System.Windows.Forms.GroupBox();
             this.btnClean = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.выбратьКлиентаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClient)).BeginInit();
             this.contextMenuStripHardWare.SuspendLayout();
             this.groupBoxMain.SuspendLayout();
@@ -143,31 +143,7 @@
             this.добавитьToolStripMenuItem,
             this.редактироватьToolStripMenuItem});
             this.contextMenuStripHardWare.Name = "contextMenuStripContact";
-            this.contextMenuStripHardWare.Size = new System.Drawing.Size(249, 94);
-            // 
-            // выбратьКлиентаToolStripMenuItem
-            // 
-            this.выбратьКлиентаToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.выбратьКлиентаToolStripMenuItem.Name = "выбратьКлиентаToolStripMenuItem";
-            this.выбратьКлиентаToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
-            this.выбратьКлиентаToolStripMenuItem.Text = "Выбрать клиента";
-            this.выбратьКлиентаToolStripMenuItem.Click += new System.EventHandler(this.выбратьКлиентаToolStripMenuItem_Click);
-            // 
-            // добавитьToolStripMenuItem
-            // 
-            this.добавитьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_add;
-            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
-            this.добавитьToolStripMenuItem.Text = "Добавить клиента";
-            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
-            // 
-            // редактироватьToolStripMenuItem
-            // 
-            this.редактироватьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_edit;
-            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
-            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(248, 30);
-            this.редактироватьToolStripMenuItem.Text = "Редактировать информацию";
-            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
+            this.contextMenuStripHardWare.Size = new System.Drawing.Size(249, 92);
             // 
             // groupBoxMain
             // 
@@ -220,6 +196,31 @@
             this.label1.Size = new System.Drawing.Size(114, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Поиск по Фамилии";
+            // 
+            // выбратьКлиентаToolStripMenuItem
+            // 
+            this.выбратьКлиентаToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.выбратьКлиентаToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.free_icon_yes_9426997;
+            this.выбратьКлиентаToolStripMenuItem.Name = "выбратьКлиентаToolStripMenuItem";
+            this.выбратьКлиентаToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.выбратьКлиентаToolStripMenuItem.Text = "Выбрать клиента";
+            this.выбратьКлиентаToolStripMenuItem.Click += new System.EventHandler(this.выбратьКлиентаToolStripMenuItem_Click);
+            // 
+            // добавитьToolStripMenuItem
+            // 
+            this.добавитьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_add;
+            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.добавитьToolStripMenuItem.Text = "Добавить клиента";
+            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
+            // 
+            // редактироватьToolStripMenuItem
+            // 
+            this.редактироватьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_edit;
+            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
+            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.редактироватьToolStripMenuItem.Text = "Редактировать информацию";
+            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
             // 
             // FormClient
             // 

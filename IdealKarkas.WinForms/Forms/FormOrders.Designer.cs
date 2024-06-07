@@ -39,11 +39,11 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.закрытьОплатуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.закрытьОплатуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -148,6 +148,22 @@
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.закрытьОплатуToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // закрытьОплатуToolStripMenuItem
+            // 
+            this.закрытьОплатуToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.закрытьОплатуToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.free_icon_yes_9426997;
+            this.закрытьОплатуToolStripMenuItem.Name = "закрытьОплатуToolStripMenuItem";
+            this.закрытьОплатуToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.закрытьОплатуToolStripMenuItem.Text = "Закрыть оплату";
+            this.закрытьОплатуToolStripMenuItem.Click += new System.EventHandler(this.закрытьОплатуToolStripMenuItem_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -177,21 +193,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(389, 566);
             this.flowLayoutPanel1.TabIndex = 32;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.закрытьОплатуToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
-            // 
-            // закрытьОплатуToolStripMenuItem
-            // 
-            this.закрытьОплатуToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.закрытьОплатуToolStripMenuItem.Name = "закрытьОплатуToolStripMenuItem";
-            this.закрытьОплатуToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.закрытьОплатуToolStripMenuItem.Text = "Закрыть оплату";
-            this.закрытьОплатуToolStripMenuItem.Click += new System.EventHandler(this.закрытьОплатуToolStripMenuItem_Click);
             // 
             // FormOrders
             // 
