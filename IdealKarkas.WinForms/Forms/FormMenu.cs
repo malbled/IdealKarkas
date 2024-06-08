@@ -56,8 +56,8 @@ namespace IdealKarkas.WinForms.Forms
         private void btnBDOrder_Click(object sender, EventArgs e)
         {
             //code
-            var form = new FormOrders();
-            form.Show();
+            openChildForm(new FormOrders());
+            //Form.ActiveForm.WindowState = FormWindowState.Maximized;
             hideSubMenu();
         }
 

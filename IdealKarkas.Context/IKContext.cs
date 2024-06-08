@@ -14,5 +14,6 @@ namespace IdealKarkas.Context
         public DbSet<TypeObject> TypeObjects { get; set; }
         public DbSet <ObjectOrder> ObjectOrders { get; set; }
         public DbSet<Task> Tasks { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; }
     }
 }

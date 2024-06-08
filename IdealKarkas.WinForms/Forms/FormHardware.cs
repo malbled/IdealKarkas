@@ -28,6 +28,7 @@ namespace IdealKarkas.WinForms.Forms
             {
                 dgvHardware.DataSource = db.Hardwares.Where(x => x.IsActual == null).ToList();
             }
+            voidCount();
         }
 
         private void btnClean_Click(object sender, EventArgs e)
@@ -40,10 +41,11 @@ namespace IdealKarkas.WinForms.Forms
             using (var db = new IKContext())
             {
                 if (!(string.IsNullOrEmpty(txtSearch.Text)))
-                    dgvHardware.DataSource = db.Hardwares.Where(p => p.SerialNumber.ToLower().Contains(txtSearch.Text.ToLower())).ToList();
+                    dgvHardware.DataSource = db.Hardwares.Where(p => p.SerialNumber.ToLower().Contains(txtSearch.Text.ToLower()) && p.IsActual == null).ToList();
                 else
                     Init();
             }
+            voidCount();
         }
 
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,6 +113,30 @@ namespace IdealKarkas.WinForms.Forms
                 {
                     db.SaveChanges();
                     Init();
+                }
+            }
+        }
+        public void voidCount()
+        {
+            if (dgvHardware.Rows.Count >= 0)
+            {
+                var dop = dgvHardware.Rows.Count;
+                labelAllCount.Text = $"Количество записей : {dop}";
+            }
+        }
+
+        private void dgvHardware_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvHardware.Columns[e.ColumnIndex].Name == "Column3")
+            {
+                if (e.Value != null)
+                {
+                    using (var db = new IKContext())
+                    {
+                        int myInt = Convert.ToInt32(e.Value);
+                        var user = db.Manufacturers.FirstOrDefault(x => x.Id == myInt);
+                        e.Value = user.Title.ToString();
+                    }
                 }
             }
         }

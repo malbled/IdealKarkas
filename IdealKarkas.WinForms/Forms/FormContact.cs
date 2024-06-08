@@ -26,7 +26,8 @@ namespace IdealKarkas.WinForms.Forms
             using (var db = new IKContext())
             {
                 dgvStaff.DataSource = db.Staffs.Where(x => x.IsActual == null).ToList();
-            } 
+            }
+            voidCount();
         }
 
         private void dgvStaff_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -69,10 +70,11 @@ namespace IdealKarkas.WinForms.Forms
             using (var db = new IKContext())
             {
                 if (!(string.IsNullOrEmpty(txtFIO.Text)))
-                    dgvStaff.DataSource = db.Staffs.Where(p => p.LastName.ToLower().Contains(txtFIO.Text.ToLower())).ToList();
+                    dgvStaff.DataSource = db.Staffs.Where(p => p.LastName.ToLower().Contains(txtFIO.Text.ToLower()) && p.IsActual == null).ToList();
                 else
                     Init();
             }
+            voidCount();
         }
 
         private void btnClean_Click(object sender, EventArgs e)
@@ -156,6 +158,14 @@ namespace IdealKarkas.WinForms.Forms
                         Init();
                     }
                 }
+            }
+        }
+        public void voidCount()
+        {
+            if (dgvStaff.Rows.Count >= 0)
+            {
+                var dop = dgvStaff.Rows.Count;
+                labelAllCount.Text = $"Количество записей : {dop}";
             }
         }
     }

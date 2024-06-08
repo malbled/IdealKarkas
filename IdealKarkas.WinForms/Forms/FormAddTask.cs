@@ -32,7 +32,7 @@ namespace IdealKarkas.WinForms.Forms
 
         private void btnSearchStaff_Click(object sender, EventArgs e)
         {
-            listBoxHardware.Items.Clear();
+            //listBoxHardware.Items.Clear();
             using (var db = new IKContext())
             {
                 dgvStaff.AutoGenerateColumns = false;
@@ -44,13 +44,13 @@ namespace IdealKarkas.WinForms.Forms
 
         private void btnSearchHarware_Click(object sender, EventArgs e)
         {
-            listBoxHardware.Items.Clear();
+           //listBoxHardware.Items.Clear();
             using (var db = new IKContext())
             {
                 dgvHardware.AutoGenerateColumns = false;
                 dgvHardware.AllowUserToResizeRows = false;
                 if (!string.IsNullOrEmpty(txtHardware.Text))
-                    dgvHardware.DataSource = db.Hardwares.Where(p => p.SerialNumber.ToLower().Contains(txtHardware.Text.ToLower()) && p.IsActual == null).ToList();
+                    dgvHardware.DataSource = db.Hardwares.Where(p => p.Title.ToLower().Contains(txtHardware.Text.ToLower()) && p.IsActual == null).ToList();
             }
         }
 

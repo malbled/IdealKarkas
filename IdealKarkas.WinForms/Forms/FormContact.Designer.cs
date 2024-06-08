@@ -45,9 +45,12 @@
             this.btnClean = new System.Windows.Forms.Button();
             this.txtFIO = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.labelAllCount = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).BeginInit();
             this.contextMenuStripContact.SuspendLayout();
             this.groupBoxMain.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnClose
@@ -105,7 +108,7 @@
             this.dgvStaff.ReadOnly = true;
             this.dgvStaff.RowHeadersVisible = false;
             this.dgvStaff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStaff.Size = new System.Drawing.Size(680, 446);
+            this.dgvStaff.Size = new System.Drawing.Size(680, 433);
             this.dgvStaff.TabIndex = 28;
             this.dgvStaff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaff_CellContentClick);
             this.dgvStaff.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvStaff_CellFormatting);
@@ -156,7 +159,7 @@
             this.редактироватьИнформациюToolStripMenuItem,
             this.удалитьПользователяToolStripMenuItem});
             this.contextMenuStripContact.Name = "contextMenuStripContact";
-            this.contextMenuStripContact.Size = new System.Drawing.Size(249, 92);
+            this.contextMenuStripContact.Size = new System.Drawing.Size(249, 70);
             // 
             // добавитьПользователяToolStripMenuItem
             // 
@@ -234,12 +237,36 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Поиск по фамилии";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.labelAllCount});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 575);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(698, 22);
+            this.statusStrip1.SizingGrip = false;
+            this.statusStrip1.TabIndex = 42;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // labelAllCount
+            // 
+            this.labelAllCount.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.labelAllCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAllCount.ForeColor = System.Drawing.Color.White;
+            this.labelAllCount.Name = "labelAllCount";
+            this.labelAllCount.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
+            this.labelAllCount.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.labelAllCount.Size = new System.Drawing.Size(157, 17);
+            this.labelAllCount.Text = "Количество записей : 0";
+            // 
             // FormContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(698, 597);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBoxMain);
             this.Controls.Add(this.dgvStaff);
             this.Controls.Add(this.btnClose);
@@ -250,7 +277,10 @@
             this.contextMenuStripContact.ResumeLayout(false);
             this.groupBoxMain.ResumeLayout(false);
             this.groupBoxMain.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -270,5 +300,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel labelAllCount;
     }
 }

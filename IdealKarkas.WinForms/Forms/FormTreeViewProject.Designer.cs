@@ -36,8 +36,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.groupBoxMain = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbType = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBoxMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeView1
@@ -48,9 +52,9 @@
             this.treeView1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treeView1.FullRowSelect = true;
             this.treeView1.HideSelection = false;
-            this.treeView1.Location = new System.Drawing.Point(12, 87);
+            this.treeView1.Location = new System.Drawing.Point(12, 121);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(473, 502);
+            this.treeView1.Size = new System.Drawing.Size(473, 468);
             this.treeView1.TabIndex = 0;
             this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
             // 
@@ -58,7 +62,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(12, 54);
+            this.label11.Location = new System.Drawing.Point(116, 32);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(261, 30);
             this.label11.TabIndex = 26;
@@ -84,7 +88,6 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
-            this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(113)))), ((int)(((byte)(235)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -95,8 +98,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(192, 35);
             this.button1.TabIndex = 28;
-            this.button1.Text = "Получить PDF";
+            this.button1.Text = "Получить документ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -114,6 +118,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.groupBoxMain);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.treeView1);
             this.panel2.Controls.Add(this.label11);
@@ -138,6 +143,46 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // groupBoxMain
+            // 
+            this.groupBoxMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxMain.Controls.Add(this.label2);
+            this.groupBoxMain.Controls.Add(this.cmbType);
+            this.groupBoxMain.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBoxMain.Location = new System.Drawing.Point(12, 65);
+            this.groupBoxMain.Name = "groupBoxMain";
+            this.groupBoxMain.Size = new System.Drawing.Size(473, 53);
+            this.groupBoxMain.TabIndex = 35;
+            this.groupBoxMain.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(6, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 15);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Фильтр";
+            // 
+            // cmbType
+            // 
+            this.cmbType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbType.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbType.FormattingEnabled = true;
+            this.cmbType.Items.AddRange(new object[] {
+            "Все проекты",
+            "Открытые",
+            "Закрытые"});
+            this.cmbType.Location = new System.Drawing.Point(142, 19);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(302, 23);
+            this.cmbType.TabIndex = 36;
+            this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
+            // 
             // FormTreeViewProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +199,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBoxMain.ResumeLayout(false);
+            this.groupBoxMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -167,5 +214,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBoxMain;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbType;
     }
 }

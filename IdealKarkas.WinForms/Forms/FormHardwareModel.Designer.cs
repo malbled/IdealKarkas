@@ -33,7 +33,6 @@
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtNumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtManu = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbTypeOverShip = new System.Windows.Forms.ComboBox();
+            this.cmbManu = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -82,15 +82,6 @@
             this.label2.Size = new System.Drawing.Size(111, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Серийный номер";
-            // 
-            // txtManu
-            // 
-            this.txtManu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtManu.Location = new System.Drawing.Point(26, 226);
-            this.txtManu.Name = "txtManu";
-            this.txtManu.Size = new System.Drawing.Size(356, 23);
-            this.txtManu.TabIndex = 3;
-            this.txtManu.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // label3
             // 
@@ -176,19 +167,28 @@
             this.cmbTypeOverShip.TabIndex = 27;
             this.cmbTypeOverShip.SelectedIndexChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
+            // cmbManu
+            // 
+            this.cmbManu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cmbManu.FormattingEnabled = true;
+            this.cmbManu.Location = new System.Drawing.Point(26, 229);
+            this.cmbManu.Name = "cmbManu";
+            this.cmbManu.Size = new System.Drawing.Size(356, 23);
+            this.cmbManu.TabIndex = 28;
+            // 
             // FormHardwareModel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(698, 447);
+            this.Controls.Add(this.cmbManu);
             this.Controls.Add(this.cmbTypeOverShip);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnSaveChanges);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtManu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNumber);
             this.Controls.Add(this.label2);
@@ -211,7 +211,6 @@
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtManu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label10;
@@ -220,5 +219,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbTypeOverShip;
+        private System.Windows.Forms.ComboBox cmbManu;
     }
 }

@@ -39,16 +39,19 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStripHardWare = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.выбратьКлиентаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxMain = new System.Windows.Forms.GroupBox();
             this.btnClean = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.выбратьКлиентаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.labelAllCount = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClient)).BeginInit();
             this.contextMenuStripHardWare.SuspendLayout();
             this.groupBoxMain.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvClient
@@ -98,7 +101,7 @@
             this.dgvClient.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvClient.RowHeadersVisible = false;
             this.dgvClient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClient.Size = new System.Drawing.Size(680, 492);
+            this.dgvClient.Size = new System.Drawing.Size(680, 479);
             this.dgvClient.TabIndex = 29;
             this.dgvClient.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvClient_CellFormatting);
             // 
@@ -143,7 +146,32 @@
             this.добавитьToolStripMenuItem,
             this.редактироватьToolStripMenuItem});
             this.contextMenuStripHardWare.Name = "contextMenuStripContact";
-            this.contextMenuStripHardWare.Size = new System.Drawing.Size(249, 92);
+            this.contextMenuStripHardWare.Size = new System.Drawing.Size(249, 70);
+            // 
+            // выбратьКлиентаToolStripMenuItem
+            // 
+            this.выбратьКлиентаToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.выбратьКлиентаToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.free_icon_yes_9426997;
+            this.выбратьКлиентаToolStripMenuItem.Name = "выбратьКлиентаToolStripMenuItem";
+            this.выбратьКлиентаToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.выбратьКлиентаToolStripMenuItem.Text = "Выбрать клиента";
+            this.выбратьКлиентаToolStripMenuItem.Click += new System.EventHandler(this.выбратьКлиентаToolStripMenuItem_Click);
+            // 
+            // добавитьToolStripMenuItem
+            // 
+            this.добавитьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_add;
+            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
+            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.добавитьToolStripMenuItem.Text = "Добавить клиента";
+            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
+            // 
+            // редактироватьToolStripMenuItem
+            // 
+            this.редактироватьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_edit;
+            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
+            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
+            this.редактироватьToolStripMenuItem.Text = "Редактировать информацию";
+            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
             // 
             // groupBoxMain
             // 
@@ -197,30 +225,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Поиск по Фамилии";
             // 
-            // выбратьКлиентаToolStripMenuItem
+            // statusStrip1
             // 
-            this.выбратьКлиентаToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.выбратьКлиентаToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.free_icon_yes_9426997;
-            this.выбратьКлиентаToolStripMenuItem.Name = "выбратьКлиентаToolStripMenuItem";
-            this.выбратьКлиентаToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.выбратьКлиентаToolStripMenuItem.Text = "Выбрать клиента";
-            this.выбратьКлиентаToolStripMenuItem.Click += new System.EventHandler(this.выбратьКлиентаToolStripMenuItem_Click);
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.labelAllCount});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 575);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(698, 22);
+            this.statusStrip1.SizingGrip = false;
+            this.statusStrip1.TabIndex = 41;
+            this.statusStrip1.Text = "statusStrip1";
             // 
-            // добавитьToolStripMenuItem
+            // labelAllCount
             // 
-            this.добавитьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_add;
-            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.добавитьToolStripMenuItem.Text = "Добавить клиента";
-            this.добавитьToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
-            // 
-            // редактироватьToolStripMenuItem
-            // 
-            this.редактироватьToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.icon_edit;
-            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
-            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
-            this.редактироватьToolStripMenuItem.Text = "Редактировать информацию";
-            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
+            this.labelAllCount.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.labelAllCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAllCount.ForeColor = System.Drawing.Color.White;
+            this.labelAllCount.Name = "labelAllCount";
+            this.labelAllCount.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
+            this.labelAllCount.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.labelAllCount.Size = new System.Drawing.Size(157, 17);
+            this.labelAllCount.Text = "Количество записей : 0";
             // 
             // FormClient
             // 
@@ -228,6 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(698, 597);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBoxMain);
             this.Controls.Add(this.dgvClient);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -240,7 +267,10 @@
             this.contextMenuStripHardWare.ResumeLayout(false);
             this.groupBoxMain.ResumeLayout(false);
             this.groupBoxMain.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -259,5 +289,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.ToolStripMenuItem выбратьКлиентаToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel labelAllCount;
     }
 }

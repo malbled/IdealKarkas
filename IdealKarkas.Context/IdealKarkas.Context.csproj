@@ -95,9 +95,14 @@
     <Compile Include="Migrations\202406032246287_Edit0406.Designer.cs">
       <DependentUpon>202406032246287_Edit0406.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202406080247298_Edit0806.cs" />
+    <Compile Include="Migrations\202406080247298_Edit0806.Designer.cs">
+      <DependentUpon>202406080247298_Edit0806.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Hardware.cs" />
+    <Compile Include="Models\Manufacturer.cs" />
     <Compile Include="Models\ObjectMod.cs" />
     <Compile Include="Models\ObjectOrder.cs" />
     <Compile Include="Models\Order.cs" />
@@ -140,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202406032246287_Edit0406.resx">
       <DependentUpon>202406032246287_Edit0406.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406080247298_Edit0806.resx">
+      <DependentUpon>202406080247298_Edit0806.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

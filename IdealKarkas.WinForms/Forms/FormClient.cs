@@ -20,6 +20,7 @@ namespace IdealKarkas.WinForms.Forms
             dgvClient.AutoGenerateColumns = false;
             using (var db = new IKContext())
             dgvClient.DataSource = db.Clients.ToList();
+            voidCount();
         }
 
         private void btnClean_Click(object sender, EventArgs e)
@@ -36,6 +37,7 @@ namespace IdealKarkas.WinForms.Forms
                 else
                     Init();
             }
+            voidCount();
         }
 
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -127,6 +129,14 @@ namespace IdealKarkas.WinForms.Forms
                 this.Close();
             }
             
+        }
+        public void voidCount()
+        {
+            if (dgvClient.Rows.Count >= 0)
+            {
+                var dop = dgvClient.Rows.Count;
+                labelAllCount.Text = $"Количество записей : {dop}";
+            }
         }
     }
 }

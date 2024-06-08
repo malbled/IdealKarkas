@@ -282,6 +282,10 @@
             // 
             // panelForm
             // 
+            this.panelForm.AutoScroll = true;
+            this.panelForm.AutoScrollMargin = new System.Drawing.Size(1000, 0);
+            this.panelForm.AutoSize = true;
+            this.panelForm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelForm.Controls.Add(this.pictureBox1);
             this.panelForm.Controls.Add(this.label1);
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -305,6 +309,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(918, 597);
             this.Controls.Add(this.panelForm);
@@ -325,6 +330,7 @@
             this.panelForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

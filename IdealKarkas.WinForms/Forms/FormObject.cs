@@ -44,6 +44,7 @@ namespace IdealKarkas.WinForms.Forms
                 cmbTypeObject.SelectedIndex = 0;
                 cmbTypeObject.DisplayMember = nameof(TypeObject.Title);
             }
+            voidCount();
         }
 
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -150,6 +151,7 @@ namespace IdealKarkas.WinForms.Forms
                     dgvObject.DataSource = list;
                 }
             }
+            voidCount();
         }
 
         private void dgvObject_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -166,6 +168,15 @@ namespace IdealKarkas.WinForms.Forms
                     Init();
                 }
             }
+        }
+        public void voidCount()
+        {
+            if (dgvObject.Rows.Count >= 0)
+            {
+                var dop = dgvObject.Rows.Count;
+                labelCount.Text = $"Количество записей : {dop}";
+            }
+
         }
     }
 }
