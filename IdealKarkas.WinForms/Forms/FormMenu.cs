@@ -65,7 +65,15 @@ namespace IdealKarkas.WinForms.Forms
         {
             //code
             hideSubMenu();
-            openChildForm(new FormTreeViewProject());
+            if(WorkToUser.Staff.TypeUser == Context.Enums.TypeUser.Admin || WorkToUser.Staff.TypeUser == Context.Enums.TypeUser.Root)
+            {
+                openChildForm(new FormTreeViewProject());
+            }
+            else
+            {
+                MessageBox.Show("Вы должны обладать правами ROOT или ADMIN, для просмотра информации о проектах", "IdealKarkas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         private void btnReport_Click(object sender, EventArgs e)

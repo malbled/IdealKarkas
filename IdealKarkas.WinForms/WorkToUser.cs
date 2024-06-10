@@ -17,7 +17,7 @@ namespace IdealKarkas.WinForms
                     {
                         Id = -1,
                         LastName = "Неопознаный человек",
-                        TypeUser = TypeUser.Member,
+                        TypeUser = TypeUser.Root,
                     };
                 }
                 return staff;

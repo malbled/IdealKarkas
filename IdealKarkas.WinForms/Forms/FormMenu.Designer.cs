@@ -272,11 +272,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(113)))), ((int)(((byte)(235)))));
-            this.label1.Location = new System.Drawing.Point(164, 378);
+            this.label1.Location = new System.Drawing.Point(117, 393);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 86);
+            this.label1.Size = new System.Drawing.Size(479, 106);
             this.label1.TabIndex = 2;
             this.label1.Text = "IdealKarkas";
             // 
@@ -298,9 +298,9 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::IdealKarkas.WinForms.Properties.Resources.image2__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(244, 154);
+            this.pictureBox1.Location = new System.Drawing.Point(227, 140);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;

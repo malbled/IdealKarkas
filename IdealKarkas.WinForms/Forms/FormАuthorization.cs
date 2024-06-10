@@ -70,9 +70,10 @@ namespace IdealKarkas.WinForms.Forms
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            using (var db = new IKContext())
-            {
-                var user = db.Staffs.FirstOrDefault(x => x.Login == txtLogin.Text && x.Password == txtPassword.Text);
+            var context = new IKContext();
+            //var list = context.Staffs.ToList();
+
+                var user = context.Staffs.ToList().FirstOrDefault(x => x.Login == txtLogin.Text && SecurePasswordHasher.Verify(txtPassword.Text.ToString(), x.Password));
                 if (user == null || user.IsActual != null)
                     MessageBox.Show("Пользователь не найден!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 else
@@ -82,7 +83,6 @@ namespace IdealKarkas.WinForms.Forms
                     form.Show();
                     this.Hide();
                 }
-            }
         }
 
         private void txtLogin_TextChanged(object sender, EventArgs e)

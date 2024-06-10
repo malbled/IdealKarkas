@@ -82,7 +82,7 @@ namespace IdealKarkas.WinForms.Forms
                 Staff.Passport = txtPassport.Text;
                 Staff.PhoneNumber = txtPhone.Text;
                 Staff.TypeUser = (TypeUser)cmbTypeUser.SelectedIndex;
-                Staff.Password = txtPassword.Text;
+                Staff.Password = SecurePasswordHasher.Hash( txtPassword.Text);
                 Staff.ImagePreview = image;
                 DialogResult = DialogResult.OK;
             }
