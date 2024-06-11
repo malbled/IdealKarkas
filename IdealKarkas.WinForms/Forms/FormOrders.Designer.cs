@@ -40,7 +40,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.закрытьОплатуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
@@ -51,6 +50,8 @@
             this.groupBoxMain = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbFilter = new System.Windows.Forms.ComboBox();
+            this.закрытьОплатуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.отменаОплатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -162,18 +163,10 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.закрытьОплатуToolStripMenuItem});
+            this.закрытьОплатуToolStripMenuItem,
+            this.отменаОплатыToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(177, 26);
-            // 
-            // закрытьОплатуToolStripMenuItem
-            // 
-            this.закрытьОплатуToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.закрытьОплатуToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.free_icon_yes_9426997;
-            this.закрытьОплатуToolStripMenuItem.Name = "закрытьОплатуToolStripMenuItem";
-            this.закрытьОплатуToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.закрытьОплатуToolStripMenuItem.Text = "Закрыть оплату";
-            this.закрытьОплатуToolStripMenuItem.Click += new System.EventHandler(this.закрытьОплатуToolStripMenuItem_Click);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // label1
             // 
@@ -300,6 +293,23 @@
             this.cmbFilter.TabIndex = 36;
             this.cmbFilter.SelectedIndexChanged += new System.EventHandler(this.cmbFilter_SelectedIndexChanged);
             // 
+            // закрытьОплатуToolStripMenuItem
+            // 
+            this.закрытьОплатуToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.закрытьОплатуToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.free_icon_yes_9426997;
+            this.закрытьОплатуToolStripMenuItem.Name = "закрытьОплатуToolStripMenuItem";
+            this.закрытьОплатуToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.закрытьОплатуToolStripMenuItem.Text = "Закрыть оплату";
+            this.закрытьОплатуToolStripMenuItem.Click += new System.EventHandler(this.закрытьОплатуToolStripMenuItem_Click);
+            // 
+            // отменаОплатыToolStripMenuItem
+            // 
+            this.отменаОплатыToolStripMenuItem.Image = global::IdealKarkas.WinForms.Properties.Resources.delete;
+            this.отменаОплатыToolStripMenuItem.Name = "отменаОплатыToolStripMenuItem";
+            this.отменаОплатыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.отменаОплатыToolStripMenuItem.Text = "Отмена оплаты";
+            this.отменаОплатыToolStripMenuItem.Click += new System.EventHandler(this.отменаОплатыToolStripMenuItem_Click);
+            // 
             // FormOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,5 +360,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.ToolStripMenuItem отменаОплатыToolStripMenuItem;
     }
 }

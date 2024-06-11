@@ -165,6 +165,31 @@ namespace IdealKarkas.WinForms.Forms
             }
             voidCount();
         }
+
+        private void отменаОплатыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dgvOrder.Rows.Count > 0)
+            {
+                var item = (Order)dgvOrder.SelectedRows[0].DataBoundItem;
+                if (item == null) return;
+                if (item.DatePayFact != null)
+                {
+                    DialogResult dialogResult = MessageBox.Show($"Вы уверены, что хотите отменить оплату {item.NumberProject}?", "IdealKarkas", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        using (var db = new IKContext())
+                        {
+                            item.DatePayFact = null;
+                            db.Entry(item).State = EntityState.Modified;
+                            db.SaveChanges();
+                            Init();
+                        }
+                    }
+                }
+                else
+                    MessageBox.Show($"Оплата отсутствует для {item.NumberProject}", "IdealKarkas", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
 

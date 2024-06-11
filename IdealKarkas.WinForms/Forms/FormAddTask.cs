@@ -49,6 +49,7 @@ namespace IdealKarkas.WinForms.Forms
             {
                 dgvHardware.AutoGenerateColumns = false;
                 dgvHardware.AllowUserToResizeRows = false;
+                dgvHardware.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
                 if (!string.IsNullOrEmpty(txtHardware.Text))
                     dgvHardware.DataSource = db.Hardwares.Where(p => p.Title.ToLower().Contains(txtHardware.Text.ToLower()) && p.IsActual == null).ToList();
             }

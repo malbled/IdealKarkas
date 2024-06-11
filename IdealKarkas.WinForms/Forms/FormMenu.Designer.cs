@@ -298,9 +298,9 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::IdealKarkas.WinForms.Properties.Resources.image2__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(227, 140);
+            this.pictureBox1.Location = new System.Drawing.Point(253, 190);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;

@@ -124,6 +124,9 @@
   <data name="icon-delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="free-icon-yes-9426997" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-yes-9426997.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,7 +151,7 @@
   <data name="free-icon-maximize-3413667" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-icon-maximize-3413667.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="free-icon-yes-9426997" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-icon-yes-9426997.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
